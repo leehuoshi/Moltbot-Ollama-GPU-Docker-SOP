@@ -48,6 +48,11 @@ Moltbot/
 
 ---
 
+
+ps ports 建議改成固定地址即可    
+ports:
+      - "192.168.1.xx:18789:18789"
+      - "192.168.1.xx:18790:18790"
 ## docker-compose.yml
 
 ```yaml

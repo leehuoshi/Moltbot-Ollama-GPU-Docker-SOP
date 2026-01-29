@@ -18,11 +18,16 @@ curl http://localhost:11434/api/tags
 
 1️⃣ 建立專案結構
 Moltbot/
+```text
+Moltbot/
 ├─ docker-compose.yml
 ├─ Dockerfile
-└─ (optional) README.md
+└─ README.md
+```
 
-2️⃣ docker-compose.yml
+## 2️⃣ docker-compose.yml
+
+```yaml
 services:
   moltbot-gateway:
     image: moltbot:local
@@ -65,6 +70,8 @@ services:
 volumes:
   clawdbot-config:
   clawdbot-workspace:
+```
+
 
 3️⃣ 啟動 Moltbot Gateway
 docker compose up -d
